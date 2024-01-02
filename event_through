@@ -19,7 +19,7 @@ events = {}
 
 # Функция для создания ивента через альфа бота
 def create_event_through_alpha_bot(event_name, rewards):
-    url = f'https://alphabotapi.com/create_event'  # Пример URL API альфа бота для создания ивента
+    url = f'https://alphabotapi.com/create_event'  # Пример URL API альфа бота для создания 
     headers = {'Authorization': f'Bearer {ALPHA_BOT_TOKEN}'}
     payload = {'event_name': event_name, 'rewards': rewards}
     response = requests.post(url, headers=headers, json=payload)
